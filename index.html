@@ -1,1 +1,178 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristhian Duarte - Inicio</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="Cabezal">
+            <h1 onclick="window.location.href='index.html'" class="active">INICIO</h1>
+            <h1 onclick="window.location.href='#sobre-mi'">SOBRE MÍ</h1>
+            <h1 onclick="window.location.href='#proyectos'">PROYECTOS</h1>
+            <h1 onclick="window.location.href='contacto.html'">CONTACTO</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="images/Eze-fotocarne.jpg" alt="Cristhian Duarte" class="foto-cv">
+                    <h1>Cristhian Duarte</h1>
+                    <p>Desarrollador Backend | PHP · Java · MySQL · Docker</p>
+                    <div>
+                        <a href="contacto.html" class="btn btn-outline" style="border-color: white; color: white; margin-right: 1rem;">Contáctame</a>
+                        <a href="https://github.com/ezequiel-duarte" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div style="max-width: 800px;">
+                    <p style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 1.5rem;">
+                        Desarrollador backend en formación con experiencia en PHP, Java y MySQL. He creado APIs RESTful 
+                        y participado en proyectos personales aplicando buenas prácticas.
+                    </p>
+                    <p style="color: var(--secondary);">
+                        Estoy motivado por seguir aprendiendo, integrarme a un equipo donde pueda seguir creciendo 
+                        profesionalmente y aportar soluciones de calidad.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Lenguajes</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                </div>
+                
+                <h3 style="color: var(--secondary); margin: 2rem 0 1rem;">Bases de Datos</h3>
+                <div class="skills-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                </div>
+                
+                <h3 style="color: var(--secondary); margin: 2rem 0 1rem;">Herramientas</h3>
+                <div class="skills-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                    <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="skill-item"><i class="fas fa-code"></i><span>VS Code</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Experiencia</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Actualidad</div>
+                    <div class="timeline-title">Proyecto: Mateando Juntos</div>
+                    <div class="timeline-subtitle">Desarrollador Backend</div>
+                    <ul class="timeline-list">
+                        <li>Diseño e implementación de arquitectura escalable con Docker, PHP y MySQL</li>
+                        <li>Desarrollo de APIs RESTful para gestión de usuarios, eventos y comunidades</li>
+                        <li>Integración de autenticación JWT y manejo de sesiones con cURL</li>
+                        <li>Creación de contenedores Docker para entorno estandarizado</li>
+                        <li>Uso de Git para control de versiones y colaboración</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2024 - Ene 2025</div>
+                    <div class="timeline-title">Ayudante de Soporte</div>
+                    <div class="timeline-subtitle">Reparación y venta de hardware</div>
+                    <ul class="timeline-list">
+                        <li>Reparación y venta de hardware</li>
+                        <li>Formateo, instalación de Windows/Linux y configuración de equipos</li>
+                        <li>Asistencia a clientes presencial y remota</li>
+                        <li>Documentación de incidencias y seguimiento de reparaciones</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Educación</h2>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary);">Bachiller tecnológico en informática</h3>
+                    <p style="color: var(--secondary);">2022 - 2024 · Escuela Superior de Informática Buceo</p>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary);">Ingeniería en Computación</h3>
+                    <p style="color: var(--secondary);">2025 - Actualidad · Facultad de Ingeniería (Cursando)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <h2 class="section-title">Proyecto Destacado</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">🧉</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mateando Juntos</h3>
+                            <p class="project-desc">Red social para amantes de la cultura del mate. Incluye publicaciones, eventos, comunidades y chat en tiempo real.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">JWT</span>
+                            </div>
+                            <a href="MatenadoJ.html" class="project-link">Ver proyecto completo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Cristhian Duarte</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> cristhianduarterod@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+598) 091-748-141</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ezequiel-duarte"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cristhian-duarte-dev"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copyright">© 2026 Cristhian Duarte · Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cristhian Duarte</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="Cabezal">
+            <h1 onclick="window.location.href='index.html'">INICIO</h1>
+            <h1 onclick="window.location.href='index.html#sobre-mi'">SOBRE MÍ</h1>
+            <h1 onclick="window.location.href='index.html#proyectos'">PROYECTOS</h1>
+            <h1 onclick="window.location.href='contacto.html'" class="active">CONTACTO</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>¿Querés contactarme? Estoy a un mensaje de distancia.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <h2>Información de contacto</h2>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:cristhianduarterod@gmail.com">cristhianduarterod@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h3>Teléfono</h3>
+                                <p>(+598) 091-748-141</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h3>Ubicación</h3>
+                                <p>Montevideo, Uruguay</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Redes sociales</h3>
+                            <div class="social-grid">
+                                <a href="https://github.com/ezequiel-duarte" class="social-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="www.linkedin.com/in/cristhian-duarte-dev" class="social-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-item">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form">
+                        <h2>Envíame un mensaje</h2>
+
+                        <!-- Cambiá el action para EmailJS (lo manejamos con JS) -->
+                        <form id="contact-form" method="POST">
+                            <!-- Agregué los name="" a cada campo -->
+                            <div class="form-group">
+                                <label class="form-label" for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="asunto">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" class="form-textarea" required></textarea>
+                            </div>
+
+                            <button type="submit" class="form-submit">Enviar mensaje</button>
+                        </form>
+
+                        <!-- Contenedor para mensajes de éxito/error -->
+                        <div id="form-status"></div>
+                    </div>
+
+                    <!-- Mapa (opcional) -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map" style="font-size: 3rem; margin-right: 1rem;"></i>
+                            <span>Mapa de Montevideo, Uruguay</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <!-- Tu script personalizado -->
+        <script src="js/contacto.js"></script>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Cristhian Duarte</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> cristhianduarterod@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+598) 091-748-141</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ezequiel-duarte"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cristhian-duarte-dev"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copyright">© 2026 Cristhian Duarte · Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

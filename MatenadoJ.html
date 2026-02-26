@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateando Juntos - Cristhian Duarte</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="Cabezal">
+            <h1 onclick="window.location.href='index.html'">INICIO</h1>
+            <h1 onclick="window.location.href='index.html#sobre-mi'">SOBRE MÍ</h1>
+            <h1 onclick="window.location.href='index.html#proyectos'" class="active">PROYECTOS</h1>
+            <h1 onclick="window.location.href='contacto.html'">CONTACTO</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero del proyecto -->
+        <section class="proyecto-hero">
+            <div class="container">
+                <h1>🧉 Mateando Juntos</h1>
+                <p class="subtitulo">Red social para amantes de la cultura del mate</p>
+                <div class="proyecto-badge">
+                    <i class="fas fa-star"></i> Proyecto destacado 2024
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">+2.5k</div>
+                        <div class="stat-label">Líneas de código</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Módulos API</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Tablas BD</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Contenedores</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descripción -->
+        <section class="proyecto-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Descripción del proyecto</h2>
+                    <p>Una plataforma social diseñada para conectar a personas apasionadas por la cultura del mate en Uruguay</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="color: var(--secondary);">
+                        Mateando Juntos permite a los usuarios crear publicaciones, organizar eventos, unirse a comunidades temáticas, 
+                        chatear en tiempo real y compartir experiencias relacionadas con esta tradición sudamericana. 
+                        El proyecto fue desarrollado como trabajo final de la tecnicatura en ESI, siguiendo estándares profesionales 
+                        como IEEE830 para la documentación de requisitos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section class="proyecto-section" style="background: white;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Características principales</h2>
+                    <p>Todo lo que necesitas para compartir la cultura del mate</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Autenticación JWT</h3>
+                        <p>Sistema seguro de login con tokens JWT y manejo de sesiones</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Publicaciones</h3>
+                        <p>Creación de posts con imágenes, sistema de likes y comentarios</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🗓️</div>
+                        <h3>Eventos</h3>
+                        <p>Organización de eventos con ubicación geográfica en mapa interactivo</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Comunidades</h3>
+                        <p>Grupos temáticos para compartir intereses específicos sobre el mate</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Chat en tiempo real</h3>
+                        <p>Mensajería instantánea entre usuarios para coordinar encuentros</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🐳</div>
+                        <h3>Docker</h3>
+                        <p>Entorno containerizado con replicación MySQL master-slave</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías -->
+        <section class="proyecto-section tech-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tecnologías utilizadas</h2>
+                    <p>Stack técnico del proyecto</p>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="fab fa-php"></i><span>PHP 8</span></div>
+                    <div class="tech-item"><i class="fas fa-database"></i><span>MySQL 8</span></div>
+                    <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class="fas fa-lock"></i><span>JWT</span></div>
+                    <div class="tech-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                    <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos demo -->
+        <section class="proyecto-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Video demostrativo</h2>
+                    <p>Mira el proyecto en acción</p>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-header">
+                            <h3>Demo completa </h3>
+                        </div>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/pkVTtkbqipA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="text-align: center; margin: 3rem 0 1.5rem;">Videos por funcionalidad</h3>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-header"><h3>Login y registro</h3></div>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/ODTlPVh1IzY" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-header"><h3>Publicaciones y likes</h3></div>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/IGwqCYjfXdY" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-header"><h3>Eventos</h3></div>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/QK0IzA_xat8" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-header"><h3>Comunidades</h3></div>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/oMLqmCaNLiM" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces -->
+        <section class="proyecto-section links-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recursos del proyecto</h2>
+                    <p>Todo lo que necesitas para conocer más</p>
+                </div>
+                
+                <div class="links-grid">
+                    <a href="https://github.com/UruDevs-devteam/Mateando-Juntos.git" class="link-card" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>Código fuente</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1tWNstc-jf3K4WCU7JUgSPzgApTd3Qucq/view?usp=sharing" class="link-card" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Documentación</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1eNO_BxBKIkvo6r9GPnK6zg4uPWeVyTjU/view?usp=sharing" class="link-card" target="_blank">
+                        <i class="fas fa-book"></i>
+                        <span>Manual usuario</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Cristhian Duarte</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> cristhianduarterod@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+598) 091-748-141</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ezequiel-duarte"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cristhian-duarte-dev"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copyright">© 2026 Cristhian Duarte · Proyecto Mateando Juntos</p>
+        </div>
+    </footer>
+</body>
+</html>
