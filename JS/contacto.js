@@ -22,12 +22,12 @@
             emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
                 .then(function(response) {
                     console.log('EmailJS éxito:', response);
-                    showMessage('✅ Mensaje enviado con éxito', 'success');
+                    showMessage('Mensaje enviado con éxito', 'success');
                     form.reset();
                 })
                 .catch(function(error) {
                     console.error('EmailJS error:', error);
-                    showMessage('❌ Error al enviar. Intentalo de nuevo.', 'error');
+                    showMessage('Error al enviar. Intentalo de nuevo.', 'error');
                 })
                 .finally(function() {
                     btn.textContent = originalText;
